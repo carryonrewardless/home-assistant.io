@@ -17,7 +17,7 @@ ha_platforms:
 ha_integration_type: helper
 ---
 
-The **Utility Meter** {% term integration %} provides functionality to track consumptions of various utilities (e.g., energy, gas, water, heating).
+The **Utility Meter** {% term integration %} provides functionality to track consumptions of various utilities (e.g., energy, gas, water, heating). Note that this does not integrate the input sensor. The input must be an energy (kWh or Wh) or quantity (litres, gallons, kg etc) type of sensor.
 
 From a user perspective, utility meters operate in cycles (usually monthly) for billing purposes. This sensor will track a source sensor values, automatically resetting the meter based on the configured cycle. On reset an attribute will store the previous meter value, providing the means for comparison operations (e.g., "did I spend more or less this month?") or billing estimation (e.g., through a sensor template that multiplies the metered value per the charged unit amount).
 
